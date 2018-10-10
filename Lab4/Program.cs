@@ -25,13 +25,12 @@ namespace Lab4
 
                 //Console.WriteLine(cubed);
 
-                Console.WriteLine("Number     Squared     Cubed\n======     " +
-                    "=======     =====\n");
+                Console.WriteLine("{0,-8} {1,-8} {2,-8}","Number","Squared","Cubed");
                 for (int i = startingNumber; i <= userInput; i++)
                 {
                     squared = Math.Pow(i, 2);
                     cubed = Math.Pow(i, 3);
-                    Console.WriteLine("{0}      {1}            {2}", i, squared,
+                    Console.WriteLine("{0,-9}{1,-9}{2,-9}", i, squared,
                         cubed);
                 }
                 Console.WriteLine("Do You Want To Continue. (y/n)?");
