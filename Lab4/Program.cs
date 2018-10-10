@@ -17,20 +17,26 @@ namespace Lab4
             double squared;
             double cubed;
 
+            //running yes or no loop
             do
             {
-                Console.WriteLine("Learn your squares and cubes!");
-                Console.WriteLine("Enter an integer");
+                Console.WriteLine("Learn your squares and cubes!\n");
+                Console.Write("Enter an integer: ");
                 userInput = double.Parse(Console.ReadLine());
 
-                //Console.WriteLine(cubed);
+                //starting table and spacing using escape code \n and position codes.
+                Console.WriteLine("\n{0,-15} {1,-15} {2}","Number","Squared","Cubed");
+                Console.WriteLine("{0,-15} {1,-15} {2}", "======", "=======", "=====");
 
-                Console.WriteLine("{0,-8} {1,-8} {2,-8}","Number","Squared","Cubed");
+                //loop tests starting number aginst user number, Runs until user number is reached.
                 for (int i = startingNumber; i <= userInput; i++)
                 {
+                    //logic, takes starting number and uses squared and cubed from Math.Pow
                     squared = Math.Pow(i, 2);
                     cubed = Math.Pow(i, 3);
-                    Console.WriteLine("{0,-9}{1,-9}{2,-9}", i, squared,
+
+                    //Writes under table using position codes
+                    Console.WriteLine("{0,-16}{1,-16}{2}", i, squared,
                         cubed);
                 }
                 Console.WriteLine("Do You Want To Continue. (y/n)?");
