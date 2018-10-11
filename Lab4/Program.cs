@@ -28,7 +28,7 @@ namespace Lab4
                 Console.WriteLine("\n{0,-15} {1,-15} {2}","Number","Squared","Cubed");
                 Console.WriteLine("{0,-15} {1,-15} {2}", "======", "=======", "=====");
 
-                //loop tests starting number aginst user number, Runs until user number is reached.
+                //loop tests starting number against user number, Runs until user number is reached.
                 for (int i = startingNumber; i <= userInput; i++)
                 {
                     //logic, takes starting number and uses squared and cubed from Math.Pow
